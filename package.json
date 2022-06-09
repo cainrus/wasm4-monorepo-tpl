@@ -1,0 +1,29 @@
+{
+  "name": "wasm4-monorepo-template",
+  "packageManager": "yarn@3.2.1",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "engines": {
+    "node": "^16.14.2",
+    "yarn": "^3.2.1"
+  },
+  "scripts": {
+    "lint-staged": "lint-staged",
+    "build": "nx run-many --target=build --all",
+    "prepare": "husky install",
+    "eslint:fix": "eslint --fix"
+  },
+  "devDependencies": {
+    "@nrwl/nx-cloud": "latest",
+    "@types/prettier": "^2",
+    "eslint": "^8.18.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.2",
+    "nx": "14.2.4",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}

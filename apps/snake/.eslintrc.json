@@ -1,0 +1,5 @@
+{
+  "extends": "@wasm4-monorepo-template/eslint-config-wasm",
+  "ignorePatterns": [
+  ]
+}

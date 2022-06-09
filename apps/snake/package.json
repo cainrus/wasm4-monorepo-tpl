@@ -1,0 +1,15 @@
+{
+  "name": "@wasm4-monorepo-template/snake",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "asc --target release",
+    "build:debug": "asc --target debug",
+    "run": "w4 run build/cart.wasm",
+    "dev": "w4 watch src"
+  },
+  "devDependencies": {
+    "@wasm4-monorepo-template/eslint-config-wasm": "workspace:^*",
+    "assemblyscript": "^0.19.12",
+    "wasm4": "^2.5.0"
+  }
+}
